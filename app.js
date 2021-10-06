@@ -30,28 +30,33 @@ let transportations = ['Car' , 'Walking' , 'Biking' , 'Taxi' , 'Horseback' , 'Mo
 
 let entertainments = ['Movie' , 'Shopping' , 'Playing Games' , 'Reading Books' , 'Playing Golf' , 'Bowling' , 'Target Practicing' , 'Jet Skiing' , 'Wine Tasting' , 'People Watching'];
 
-let randDest = destinations[Math.floor(Math.random() * destinations.length)];
+let randDest = randomizer(destinations);
 console.log (randDest);
 
-let randRest = restaurants[Math.floor(Math.random() * restaurants.length)];
+let randRest = randomizer(restaurants);
 console.log (randRest);
 
-let randTran = transportations[Math.floor(Math.random() * transportations.length)];
+let randTran = randomizer(transportations); 
 console.log (randTran);
 
-let randEnt = entertainments[Math.floor(Math.random() * entertainments.length)];
+let randEnt = randomizer(entertainments);
 console.log (randEnt);
 
-
+function randomizer (Array) {
+    return    Array[Math.floor(Math.random() * Array.length)];  
+}
 prompt("Press Any Key To Begin Your Trip Plan");
-    if (" "){
-        console.log("We will go to " +  randDest + ", then we will eat " + randRest + ". We will get there by way of " + randTran + ", and finally, we will end the evening, " + randEnt + ".");
-    }
+if (" "){
+    console.log("We will go to " +  randDest + ", then we will eat " + randRest + ". We will get there by way of " + randTran + ", and finally, we will end the evening, " + randEnt + ".");
+}
 
-    prompt("Would You Like To Use This Plan?");
-        if ("yes"){
-            console.log("Enjoy your day trip!");
-        }
-        else ("no")
-            prompt("I'm sorry to hear that. I will try again");
+prompt("Would You Like To Use This Plan?");
+if ("yes"){
+    console.log("Enjoy your day trip!");
+}
+else ("no")
+    prompt("I'm sorry to hear that. I will try again");
+
+     prompt("What part do you want to change? Destination, Restaurant, Transportation, Entertainment, or All");
+
                 
