@@ -22,7 +22,7 @@
 //Entertainment let entertainments = ['Movie' , 'Shopping' , 'Playing Games' , 'Reading Books' , 'Playing Golf' , 'Bowling' , 'Target Practice' , 'Jet Skiing' , 'Wine Tasting' , 'People Watching'];
 
 
-let destinations = ['The Mall' , 'The Park' , 'Downtown' , 'Golf Course' , 'Bowling Alley' , 'The Lake' , 'Football Stadium' , 'Art Gallery' , 'Museum', 'Shooting Range'];
+let destinations = ['the Mall' , 'the Park' , 'the pool' , 'the Golf Course' , 'the Bowling Alley' , 'the Lake' , 'the Football Stadium' , 'the Art Gallery' , 'the Museum', 'the Shooting Range'];
 
 let restaurants = ['Italian' , 'Tex Mex' , 'Chinese' , 'Korean' , 'Sushi' , 'Steakhouse' , 'Burgers' , 'Fast Food' , 'Seafood' , 'Sandwich Shop'];
 
@@ -41,3 +41,9 @@ console.log (randTran);
 
 let randEnt = entertainments[Math.floor(Math.random() * entertainments.length)];
 console.log (randEnt);
+
+
+prompt("Would you like to take a trip?");
+    if ("yes"){
+        console.log("We will go to " +  randDest + ", then we will eat " + randRest + ". We will get there by way of " + randTran + ", and finally, we will end the evening, " + randEnt + ".");
+    }
