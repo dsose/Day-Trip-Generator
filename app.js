@@ -55,25 +55,25 @@ let answers = ['yes' , 'no'];
 let unhappyAnswers = ['1' , '2' , '3' , '4' , '5'];
 
 prompt("Would You Like To Use This Plan?");
-if (answers[0]){
+if ('yes' === 'yes'){
   console.log("Enjoy your day trip!");
 
-}
-else if (answers[1]) {
+} else { ('no'=== 'no') 
      prompt("What part do you want to change? Input the corresponding number for a new answer. 1.Destination, 2.Restaurant, 3.Transportation, 4.Entertainment, or 5.All");
-}
-unhappyAnswers[0]
+
+     }
+if ('1' === '1'){
 console.log (randomizer(destinations));
-
-unhappyAnswers[1]
+}
+else if ('2' === '2'){
 console.log (randomizer(restaurants));
-
-unhappyAnswers[2]
+}
+else if ('3' === '3'){
 console.log (randomizer(transportations));
-
-unhappyAnswers[3]
+}
+else if ('4' === '4'){
 console.log (randomizer(entertainments));
-
-unhappyAnswers[4]
+}
+else if ('5' === '5'){
 console.log ("We will go to " +  randDest + ", then we will eat " + randRest + ". We will get there by way of " + randTran + ", and finally, we will end the evening, " + randEnt + ".");
-                
+}
