@@ -28,7 +28,7 @@ let restaurants = ['Italian' , 'Tex Mex' , 'Chinese' , 'Korean' , 'Sushi' , 'a S
 
 let transportations = ['Car' , 'Walking' , 'Biking' , 'Taxi' , 'Horseback' , 'Motorcycle' , 'Jogging' , 'Ferry' , 'Boat' , 'Hitchhiking'];
 
-let entertainments = ['Movie' , 'Shopping' , 'Playing Games' , 'Reading Books' , 'Playing Golf' , 'Bowling' , 'Target Practicing' , 'Jet Skiing' , 'Wine Tasting' , 'People Watching'];
+let entertainments = ['watching a Movie' , 'Shopping' , 'Playing Games' , 'Reading Books' , 'Playing Golf' , 'Bowling' , 'Target Practicing' , 'Jet Skiing' , 'Wine Tasting' , 'People Watching'];
 
 let randDest = randomizer(destinations);
 console.log (randDest);
@@ -50,13 +50,30 @@ if (" "){
     console.log("We will go to " +  randDest + ", then we will eat " + randRest + ". We will get there by way of " + randTran + ", and finally, we will end the evening, " + randEnt + ".");
 }
 
+let answers = ['yes' , 'no'];
+
+let unhappyAnswers = ['1' , '2' , '3' , '4' , '5'];
+
 prompt("Would You Like To Use This Plan?");
-if ("yes"){
-    console.log("Enjoy your day trip!");
+if (answers[0]){
+  console.log("Enjoy your day trip!");
+
 }
-else ("no")
-    prompt("I'm sorry to hear that. I will try again");
+else if (answers[1]) {
+     prompt("What part do you want to change? Input the corresponding number for a new answer. 1.Destination, 2.Restaurant, 3.Transportation, 4.Entertainment, or 5.All");
+}
+unhappyAnswers[0]
+console.log (randomizer(destinations));
 
-     prompt("What part do you want to change? Destination, Restaurant, Transportation, Entertainment, or All");
+unhappyAnswers[1]
+console.log (randomizer(restaurants));
 
+unhappyAnswers[2]
+console.log (randomizer(transportations));
+
+unhappyAnswers[3]
+console.log (randomizer(entertainments));
+
+unhappyAnswers[4]
+console.log ("We will go to " +  randDest + ", then we will eat " + randRest + ". We will get there by way of " + randTran + ", and finally, we will end the evening, " + randEnt + ".");
                 
